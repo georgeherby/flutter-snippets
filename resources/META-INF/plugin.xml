@@ -1,12 +1,41 @@
 <idea-plugin>
-  <id>com.herbert.george.flutter-snippets</id>
-  <name>Flutter Snippets</name>
-  <version>0.1</version>
-  <vendor>George Herbert</vendor>
-  <description>Provides live templates for Flutter to save time writing boiler plate</description>
-  <idea-version since-build="141.0"/>
-  <extensions defaultExtensionNs="com.intellij">
-    <defaultLiveTemplatesProvider implementation="FlutterTemplateProvider"/>
-    <liveTemplateContext implementation="FlutterContext"/>
-  </extensions>
+    <id>com.herbert.george.flutter-snippets</id>
+    <name>Flutter Snippets</name>
+    <version>0.1.0</version>
+    <vendor>George Herbert</vendor>
+    <description><![CDATA[
+  Provides live templates for Flutter to save time writing boiler plate.<br><br>
+
+  The following commands are supported:
+<table>
+  <tr>
+    <th>Shortcut</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>alertDialog</td>
+    <td>Creates a showDialog that returns with AlertDialog</td>
+  </tr>
+  <tr>
+    <td>futureBldr</td>
+    <td>Creates a FutureBuilder</td>
+  </tr>
+  <tr>
+    <td>listViewBldr</td>
+    <td>Creates a ListView.builder()</td>
+  </tr>
+  <tr>
+    <td>streamBldr</td>
+    <td>Creates a StreamBuilder</td>
+  </tr>
+</table>
+
+]]></description>
+    <change-notes>Initial release of Flutter Snippets to the plugin repository</change-notes>
+    <idea-version since-build="141.0"/>
+    <depends>com.intellij.modules.java</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <defaultLiveTemplatesProvider implementation="FlutterTemplateProvider"/>
+        <liveTemplateContext implementation="FlutterContext"/>
+    </extensions>
 </idea-plugin>
