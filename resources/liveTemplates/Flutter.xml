@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Flutter">
+    <template name="futureBldr"
+              value="FutureBuilder(&#10;future: $FUTURE$,initialData: $INITIAL$,builder: (BuildContext context, AsyncSnapshot snapshot) {if (snapshot.hasData) {if (snapshot.data!=null) {return $WIDGET$;} else {return CircularProgressIndicator();}}),"
+              description="Create FutureBuilder" toReformat="true" toShortenFQNames="true">
+        <variable name="FUTURE" expression="&quot;future&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="INITIAL" expression="&quot;initialValue&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="WIDGET" expression="&quot;widget&quot;" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="DART_STATEMENT" value="true"/>
+        </context>
+    </template>
+    <template name="streamBldr"
+              value="StreamBuilder(stream: $STREAM$, builder: (BuildContext context, AsyncSnapshot snapshot) {if(snapshot.hasError) return $ERRORWIDGET$; switch (snapshot.connectionState) {case ConnectionState.none: return $DEFAULTWIDGET$;case ConnectionState.waiting: return $LOADINGWIDGET$;case ConnectionState.active: return $ACTIVEWIDGET$;       case ConnectionState.done: return $FINISHEDWIDGET$;}return null; // unreachable}, ),"
+              description="Create StreamBuilder" toReformat="true" toShortenFQNames="true">
+        <variable name="STREAM" expression="&quot;stream&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="DEFAULTWIDGET" expression="&quot;ConnectionNone&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="LOADINGWIDGET" expression="&quot;ConnectionWaiting&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="ACTIVEWIDGET" expression="&quot;ConnectionActive&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="FINISHEDWIDGET" expression="&quot;ConnectionDone&quot;" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="DART_STATEMENT" value="true"/>
+        </context>
+    </template>
+    <template name="listviewBldr"
+              value="ListView.builder(itemCount: $COUNT$,itemBuilder: (BuildContext context, int index) {return $WIDGET$;}, ),"
+              description="Create ListView.builder" toReformat="true" toShortenFQNames="true">
+        <variable name="COUNT" expression="&quot;future&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="WIDGET" expression="&quot;widget&quot;" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="DART_STATEMENT" value="true"/>
+        </context>
+    </template>
+    <template name="showDialog"
+              value="showDialog&lt;void&gt;(&#10;context: $context$,&#10;barrierDismissible: $dismiss$, // false = user must tap button, true = tap outside dialog&#10;builder: (BuildContext dialogContext){&#10;return AlertDialog(&#10;title: Text('$title$'),&#10;content: Text('$content$'),&#10;actions: &lt;Widget&gt;[&#10;FlatButton(&#10;child: Text('$buttonText$'),&#10;onPressed: () {&#10;Navigator.of(dialogContext).pop(); // Dismiss alert dialog&#10;},&#10;),&#10;],&#10;);&#10;},&#10;);"
+              description="New AlertDialog" toReformat="false" toShortenFQNames="true">
+        <variable name="context" expression="&quot;context&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="dismiss" expression="&quot;barrierDismissible&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="title" expression="&quot;title&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="content" expression="&quot;dialogBody&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="buttonText" expression="&quot;buttonText&quot;" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="DART_STATEMENT" value="true"/>
+        </context>
+    </template>
+</templateSet>

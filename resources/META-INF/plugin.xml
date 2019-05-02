@@ -1,0 +1,12 @@
+<idea-plugin>
+  <id>com.herbert.george.flutter-snippets</id>
+  <name>Flutter Snippets</name>
+  <version>0.1</version>
+  <vendor>George Herbert</vendor>
+  <description>Provides live templates for Flutter to save time writing boiler plate</description>
+  <idea-version since-build="141.0"/>
+  <extensions defaultExtensionNs="com.intellij">
+    <defaultLiveTemplatesProvider implementation="FlutterTemplateProvider"/>
+    <liveTemplateContext implementation="FlutterContext"/>
+  </extensions>
+</idea-plugin>
