@@ -10,3 +10,8 @@ An Intellij & Android Studio plugin that adds Live Templates to your IDE saving 
 |`listViewBldr`|[View Docs](https://docs.flutter.io/flutter/widgets/ListView.builder.html)|Creates a ListView.builder()|
 |`streamBldr`|[View Docs](https://docs.flutter.io/flutter/widgets/StreamBuilder-class.html)|Creates a StreamBuilder|
 
+## Plugin Supports the Following IDEs:
+* IntelliJ IDEA Ultimate
+* IntelliJ IDEA Community
+* IntelliJ IDEA Educational
+* Android Studio
