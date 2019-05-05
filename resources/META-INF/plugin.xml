@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.herbert.george.flutter-snippets</id>
     <name>Flutter Snippets</name>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <vendor>George Herbert</vendor>
     <description><![CDATA[
   Provides live templates for Flutter to save time writing boiler plate.<br><br>
@@ -24,6 +24,10 @@
     <td>listViewBldr</td>
     <td>Creates a ListView.builder()</td>
   </tr>
+    <tr>
+    <td>scfAll</td>
+    <td>Creates a Scaffold containing an Appbar, BottomNavigationBar and FloatingActionButton</td>
+  </tr>
   <tr>
     <td>streamBldr</td>
     <td>Creates a StreamBuilder</td>
@@ -31,7 +35,7 @@
 </table>
 
 ]]></description>
-    <change-notes>Initial release of Flutter Snippets to the plugin repository</change-notes>
+    <change-notes>Add support for (scfAll) scaffold containing an Appbar, BottomNavigationBar and FloatingActionButton. Other scaffold templates will follow</change-notes>
     <idea-version since-build="141.0"/>
     <depends>com.intellij.modules.java</depends>
     <extensions defaultExtensionNs="com.intellij">

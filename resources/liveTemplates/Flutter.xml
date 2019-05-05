@@ -43,4 +43,17 @@
             <option name="DART_STATEMENT" value="true"/>
         </context>
     </template>
+    <template name="scfAll" value="int _index = 0; // Make sure this is outside build(), otherwise every setState will chage the value back to 0 &#10;&#10;return Scaffold(&#10;      appBar: AppBar(&#10;        title: Text('$appbarTitle$'),&#10;      ),&#10;      body: Center(&#10;        child: Container(child: Text('You are looking at the message for bottom navigation item $_index')),&#10;      ),&#10;      bottomNavigationBar: BottomNavigationBar(&#10;          onTap: (tappedItemIndex) =&gt; setState(() {&#10;                _index = tappedItemIndex;&#10;              }),&#10;          currentIndex: _index,&#10;          items: [&#10;            BottomNavigationBarItem(icon: Icon(Icons.av_timer), title: Text('$navBarItem1Text$')),&#10;            BottomNavigationBarItem(icon: Icon(Icons.add), title: Text('$navBarItem2Text$'))&#10;          ]),&#10;      floatingActionButton: FloatingActionButton(&#10;        onPressed: () =&gt; setState(() {&#10;              _index = 0;&#10;            }),&#10;        tooltip: 'Reset Navigation Index',&#10;        child: Icon(Icons.clear), //Change Icon&#10;      ),&#10;      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat, //Change for different locations&#10;    );" description="New AlertDialog" toReformat="false" toShortenFQNames="true">
+        <variable name="appbarTitle" expression="&quot;appbarTitle&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="navBarItem1Text" expression="&quot;navBarItem1Text&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="navBarItem2Text" expression="&quot;navBarItem2Text&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_STATEMENT" value="true" />
+        </context>
+    </template>
+
+
+
+
+
 </templateSet>
