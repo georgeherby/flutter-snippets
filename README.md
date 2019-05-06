@@ -11,3 +11,8 @@ An Intellij & Android Studio plugin that adds Live Templates to your IDE saving 
 |`scfAll`|[View Docs](https://docs.flutter.io/flutter/material/Scaffold-class.html)|Creates a Scaffold containing an Appbar, BottomNavigationBar and FloatingActionButton|
 |`streamBldr`|[View Docs](https://docs.flutter.io/flutter/widgets/StreamBuilder-class.html)|Creates a StreamBuilder|
 
+## Plugin Supports the Following IDEs:
+* IntelliJ IDEA Ultimate
+* IntelliJ IDEA Community
+* IntelliJ IDEA Educational
+* Android Studio
