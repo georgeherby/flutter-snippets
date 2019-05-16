@@ -1,12 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <idea-plugin>
     <id>com.herbert.george.flutter-snippets</id>
     <name>Flutter Snippets</name>
-    <version>0.1.1</version>
+    <version>0.1.2</version>
     <vendor>George Herbert</vendor>
     <description><![CDATA[
-  Provides live templates for Flutter to save time writing boiler plate.<br><br>
-
-  The following commands are supported:
+<p>Provides live templates for Flutter to save time writing boilerplate.</p>
+The following commands are supported:
 <table>
   <tr>
     <th>Shortcut</th>
@@ -15,6 +15,10 @@
   <tr>
     <td>alertDialog</td>
     <td>Creates a showDialog that returns with AlertDialog</td>
+  </tr>
+    <tr>
+    <td>animBldr</td>
+    <td>Creates an AnimationBuilder</td>
   </tr>
   <tr>
     <td>futureBldr</td>
@@ -28,18 +32,28 @@
     <td>scfAll</td>
     <td>Creates a Scaffold containing an Appbar, BottomNavigationBar and FloatingActionButton</td>
   </tr>
+      <tr>
+    <td>scfAppBar</td>
+    <td>Creates a Scaffold containing an Appbar</td>
+  </tr>
+   <tr>
+    <td>scfAppBarFab</td>
+    <td>Creates a Scaffold containing an Appbar and Floating Action Button</td>
+  </tr>
+  <tr>
+    <td>scfAppBarBtmNav</td>
+    <td>Creates a Scaffold containing an Appbar and Bottom Navigation Bar</td>
+  </tr>
   <tr>
     <td>streamBldr</td>
     <td>Creates a StreamBuilder</td>
   </tr>
-</table>
-
-]]></description>
-    <change-notes>Add support for (scfAll) scaffold containing an Appbar, BottomNavigationBar and FloatingActionButton. Other scaffold templates will follow</change-notes>
-    <idea-version since-build="141.0"/>
+</table>]]></description>
+    <change-notes>Add support for animBldr (Animation Builder) and a few various Scaffold options (scfAppBar, scfAppBarFab and scfAppBarBtmNav)</change-notes>
+    <idea-version since-build="141.0" />
     <depends>com.intellij.modules.java</depends>
     <extensions defaultExtensionNs="com.intellij">
-        <defaultLiveTemplatesProvider implementation="FlutterTemplateProvider"/>
-        <liveTemplateContext implementation="FlutterContext"/>
+        <defaultLiveTemplatesProvider implementation="FlutterTemplateProvider" />
+        <liveTemplateContext implementation="FlutterContext" />
     </extensions>
 </idea-plugin>
