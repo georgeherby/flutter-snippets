@@ -2,7 +2,7 @@
 <idea-plugin>
     <id>com.herbert.george.flutter-snippets</id>
     <name>Flutter Snippets</name>
-    <version>0.1.2</version>
+    <version>0.1.3</version>
     <vendor>George Herbert</vendor>
     <description><![CDATA[
 <p>Provides live templates for Flutter to save time writing boilerplate.</p>
@@ -19,6 +19,10 @@ The following commands are supported:
     <tr>
     <td>animBldr</td>
     <td>Creates an AnimationBuilder</td>
+  </tr>
+    <tr>
+    <td>customScrollV</td>
+    <td>Creates a CustomScrollView</td>
   </tr>
   <tr>
     <td>futureBldr</td>
@@ -49,7 +53,7 @@ The following commands are supported:
     <td>Creates a StreamBuilder</td>
   </tr>
 </table>]]></description>
-    <change-notes>Add support for animBldr (Animation Builder) and a few various Scaffold options (scfAppBar, scfAppBarFab and scfAppBarBtmNav)</change-notes>
+    <change-notes>Add support for customScrollV (CustomScrollView)</change-notes>
     <idea-version since-build="141.0" />
     <depends>com.intellij.modules.java</depends>
     <extensions defaultExtensionNs="com.intellij">
