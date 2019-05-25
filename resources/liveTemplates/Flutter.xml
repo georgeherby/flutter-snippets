@@ -36,6 +36,15 @@
         </context>
     </template>
 
+<!--    LayoutBuilder-->
+
+    <template name="layoutBldr" value="LayoutBuilder(&#10;builder: (BuildContext context, BoxConstraints constraints) {&#10;return $widget$;&#10;},&#10;)," description="New LayoutBuilder" toReformat="false" toShortenFQNames="true">
+        <variable name="widget" expression="&quot;widget&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_STATEMENT" value="true" />
+        </context>
+    </template>
+
 <!--    StreamBuilder-->
 
     <template name="streamBldr"

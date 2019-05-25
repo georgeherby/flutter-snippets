@@ -28,6 +28,10 @@ The following commands are supported:
     <td>futureBldr</td>
     <td>Creates a FutureBuilder</td>
   </tr>
+    <tr>
+    <td>layoutBldr</td>
+    <td>Creates a LayoutBuilder</td>
+  </tr>
   <tr>
     <td>listViewBldr</td>
     <td>Creates a ListView.builder()</td>
@@ -53,7 +57,7 @@ The following commands are supported:
     <td>Creates a StreamBuilder</td>
   </tr>
 </table>]]></description>
-    <change-notes>Add support for customScrollV (CustomScrollView)</change-notes>
+    <change-notes>Add support for customScrollV (CustomScrollView), layoutBldr (LayoutBuilder)</change-notes>
     <idea-version since-build="141.0" />
     <depends>com.intellij.modules.java</depends>
     <extensions defaultExtensionNs="com.intellij">
