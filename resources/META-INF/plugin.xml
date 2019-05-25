@@ -52,12 +52,16 @@ The following commands are supported:
     <td>scfAppBarBtmNav</td>
     <td>Creates a Scaffold containing an Appbar and Bottom Navigation Bar</td>
   </tr>
+    <tr>
+    <td>singleChildScrollV</td>
+    <td>Creates a SingleChildScrollView</td>
+  </tr>
   <tr>
     <td>streamBldr</td>
     <td>Creates a StreamBuilder</td>
   </tr>
 </table>]]></description>
-    <change-notes>Add support for customScrollV (CustomScrollView), layoutBldr (LayoutBuilder)</change-notes>
+    <change-notes>Add support for customScrollV (CustomScrollView), layoutBldr (LayoutBuilder) and singleChildScrollV (SingleChildScrollView)</change-notes>
     <idea-version since-build="141.0" />
     <depends>com.intellij.modules.java</depends>
     <extensions defaultExtensionNs="com.intellij">
