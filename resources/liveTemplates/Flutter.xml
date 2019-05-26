@@ -125,5 +125,16 @@
             <option name="DART_STATEMENT" value="true" />
         </context>
     </template>
-
+    <!--    Add Material Package Import-->
+    <template name="importMat" value="import 'package:flutter/material.dart';" description="Import Material Package" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="DART_TOPLEVEL" value="true" />
+        </context>
+    </template>
+    <!--    Add Cupertino Package Import-->
+    <template name="importCup" value="import 'package:flutter/cupertino.dart';" description="Import Cupertino Package" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="DART_TOPLEVEL" value="true" />
+        </context>
+    </template>
 </templateSet>

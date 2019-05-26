@@ -36,6 +36,14 @@ The following commands are supported:
     <td>listViewBldr</td>
     <td>Creates a ListView.builder()</td>
   </tr>
+    <tr>
+    <td>importMat</td>
+    <td>Adds Material Import</td>
+  </tr>
+    <tr>
+    <td>importCup</td>
+    <td>Adds Cupertino Import</td>
+  </tr>
   <tr>
     <td>orientatBldr</td>
     <td>Creates a ListView.builder()</td>
@@ -69,7 +77,7 @@ The following commands are supported:
     <td>Creates a StatefulBuilder</td>
   </tr>
 </table>]]></description>
-    <change-notes>Add support for stfulBldr (StatefulBuilder), orienatatBldr (OrientationBuilder)</change-notes>
+    <change-notes>Add support for stfulBldr (StatefulBuilder), orienatatBldr (OrientationBuilder) and import shortcuts for Material (importMat) and Cupertino (importCup)</change-notes>
     <idea-version since-build="141.0" />
     <depends>com.intellij.modules.java</depends>
     <extensions defaultExtensionNs="com.intellij">
