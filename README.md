@@ -11,6 +11,7 @@ An Intellij & Android Studio plugin that adds Live Templates to your IDE saving 
 |`futureBldr`|[View Docs](https://docs.flutter.io/flutter/widgets/FutureBuilder-class.html)|Creates a FutureBuilder|
 |`layoutBldr`|[View Docs](https://api.flutter.dev/flutter/widgets/LayoutBuilder-class.html)|Creates a LayoutBuilder|
 |`listViewBldr`|[View Docs](https://docs.flutter.io/flutter/widgets/ListView.builder.html)|Creates a ListView.builder()|
+|`orienatatBldr`|[View Docs](https://api.flutter.dev/flutter/widgets/OrientationBuilder-class.html)|Creates a OrientationBuilder|
 |`scfAll`|[View Docs](https://docs.flutter.io/flutter/material/Scaffold-class.html)|Creates a Scaffold containing an Appbar, BottomNavigationBar and FloatingActionButton|
 |`scfAppBar`| |Creates a Scaffold containing an Appbar|
 |`scfAppBarFab`| |Creates a Scaffold containing an Appbar and Floating Action Button|
