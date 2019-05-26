@@ -60,8 +60,12 @@ The following commands are supported:
     <td>streamBldr</td>
     <td>Creates a StreamBuilder</td>
   </tr>
+    <tr>
+    <td>stfulBldr</td>
+    <td>Creates a StatefulBuilder</td>
+  </tr>
 </table>]]></description>
-    <change-notes>Add support for customScrollV (CustomScrollView), layoutBldr (LayoutBuilder) and singleChildScrollV (SingleChildScrollView)</change-notes>
+    <change-notes>Add support for stfulBldr (StatefulBuilder)</change-notes>
     <idea-version since-build="141.0" />
     <depends>com.intellij.modules.java</depends>
     <extensions defaultExtensionNs="com.intellij">

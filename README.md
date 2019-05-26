@@ -17,6 +17,7 @@ An Intellij & Android Studio plugin that adds Live Templates to your IDE saving 
 |`scfAppBarBtmNav`| |Creates a Scaffold containing an Appbar and Bottom Navigation Bar|
 |`singleChildScrollV`|[View Docs](https://api.flutter.dev/flutter/widgets/SingleChildScrollView-class.html)|Creates a SingleChildScrollView|
 |`streamBldr`|[View Docs](https://docs.flutter.io/flutter/widgets/StreamBuilder-class.html)|Creates a StreamBuilder|
+|`stfulBldr`|[View Docs](https://api.flutter.dev/flutter/widgets/StatefulBuilder/StatefulBuilder.html)|Creates a StatefulBuilder|
 
 ## Plugin Supports the Following IDEs:
 * Android Studio
