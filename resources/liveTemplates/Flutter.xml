@@ -125,16 +125,31 @@
             <option name="DART_STATEMENT" value="true" />
         </context>
     </template>
-    <!--    Add Material Package Import-->
+    <!--    Material Package Import-->
     <template name="importMat" value="import 'package:flutter/material.dart';" description="Import Material Package" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="DART_TOPLEVEL" value="true" />
         </context>
     </template>
-    <!--    Add Cupertino Package Import-->
+    <!--    Cupertino Package Import-->
     <template name="importCup" value="import 'package:flutter/cupertino.dart';" description="Import Cupertino Package" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="DART_TOPLEVEL" value="true" />
         </context>
     </template>
+    <!--    CustomClipper-->
+    <template name="customClipper" value="class $name$Clipper extends CustomClipper&lt;Path&gt; {&#10;    &#10;@override&#10;Path getClip(Size size) {&#10;// TODO: implement getClip&#10;}&#10;&#10;@override&#10;bool shouldReclip(CustomClipper&lt;Path&gt; oldClipper) {&#10;// TODO: implement shouldReclip&#10;}&#10;}" description="Create CustomClipper" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="&quot;name&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_TOPLEVEL" value="true" />
+        </context>
+    </template>
+    <!--    CustomPainter-->
+    <template name="customPainter" value="class $name$Painter extends CustomPainter {&#10;&#10;@override&#10;void paint(Canvas canvas, Size size) {&#10;//TODO Implement paint&#10;}&#10;&#10;      @override&#10;bool shouldRepaint($name$Painter oldDelegate) {&#10;//TODO Implement shouldRepaint&#10;}&#10;&#10;@override&#10;bool shouldRebuildSemantics($name$Painter oldDelegate) {&#10;//TODO Implement shouldRebuildSemantics&#10;}&#10;}" description="Create CustomPainter" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="&quot;name&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_TOPLEVEL" value="true" />
+        </context>
+    </template>
+
 </templateSet>
