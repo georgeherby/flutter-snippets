@@ -9,8 +9,8 @@ An Intellij & Android Studio plugin that adds Live Templates to your IDE saving 
 |`animBldr`|[View Docs](https://docs.flutter.io/flutter/widgets/AnimationBuilder-class.html)|Creates an AnimationBuilder|
 |`customScrollV`|[View Docs](https://api.flutter.dev/flutter/widgets/CustomScrollView-class.html)|Creates a CustomScrollView|
 |`futureBldr`|[View Docs](https://docs.flutter.io/flutter/widgets/FutureBuilder-class.html)|Creates a FutureBuilder|
-|`importMat`||Adds Material Import|
-|`importCup`||Adds Cupertino Import|
+|`importMat`|[View Docs](https://api.flutter.dev/flutter/material/material-library.html)|Adds Material Import|
+|`importCup`|[View Docs](https://api.flutter.dev/flutter/cupertino/cupertino-library.html)|Adds Cupertino Import|
 |`layoutBldr`|[View Docs](https://api.flutter.dev/flutter/widgets/LayoutBuilder-class.html)|Creates a LayoutBuilder|
 |`listViewBldr`|[View Docs](https://docs.flutter.io/flutter/widgets/ListView.builder.html)|Creates a ListView.builder()|
 |`orienatatBldr`|[View Docs](https://api.flutter.dev/flutter/widgets/OrientationBuilder-class.html)|Creates a OrientationBuilder|
