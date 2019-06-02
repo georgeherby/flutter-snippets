@@ -1,5 +1,7 @@
 # Flutter Snippets
 
+![JetBrains IntelliJ plugins](https://img.shields.io/jetbrains/plugin/d/12348-flutter-snippets.svg?style=plastic)
+
 ![](images/flutter_snippets.png)
 
 An Intellij & Android Studio plugin that adds Live Templates to your IDE saving time writing the boilerplate in Flutter.
