@@ -152,4 +152,40 @@
         </context>
     </template>
 
+<!--    Container-->
+
+    <template name="container" value="Container(&#10;  child: $Widget$(),&#10;)" description="Create Container Widget" toReformat="true" toShortenFQNames="true">
+        <variable name="Widget" expression="&quot;Widget&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_STATEMENT" value="true" />
+        </context>
+    </template>
+
+<!--    Row-->
+
+    <template name="row" value="Row(&#10;  children: &lt;Widget&gt;[$goto$],&#10;)" description="Create Row Widget" toReformat="true" toShortenFQNames="true">
+        <variable name="goto" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_STATEMENT" value="true" />
+        </context>
+    </template>
+
+<!--    Column-->
+
+    <template name="column" value="Column(&#10;  children: &lt;Widget&gt;[$goto$],&#10;)" description="Create Column Widget" toReformat="true" toShortenFQNames="true">
+        <variable name="goto" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_STATEMENT" value="true" />
+        </context>
+    </template>
+
+<!--    Text-->
+
+    <template name="text" value="Text('$text$')" description="Create Text Widget" toReformat="true" toShortenFQNames="true">
+        <variable name="text" expression="&quot;text&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_STATEMENT" value="true" />
+        </context>
+    </template>
+    
 </templateSet>

@@ -2,7 +2,7 @@
 <idea-plugin>
     <id>com.herbert.george.flutter-snippets</id>
     <name>Flutter Snippets</name>
-    <version>0.1.6</version>
+    <version>0.1.7</version>
     <vendor>George Herbert</vendor>
     <description><![CDATA[
 <p>Provides live templates for Flutter to save time writing boilerplate.</p>
@@ -19,6 +19,14 @@ The following commands are supported:
     <tr>
     <td>animBldr</td>
     <td>Creates an AnimationBuilder</td>
+  </tr>
+    <tr>
+    <td>column</td>
+    <td>Creates a Column Widget</td>
+  </tr>
+      <tr>
+    <td>container</td>
+    <td>Creates a Container Widget</td>
   </tr>
   <tr>
     <td>customClipper</td>
@@ -56,6 +64,10 @@ The following commands are supported:
     <td>orientatBldr</td>
     <td>Creates a ListView.builder()</td>
   </tr>
+      <tr>
+    <td>row</td>
+    <td>Creates a Row Widget</td>
+  </tr>
     <tr>
     <td>scfAll</td>
     <td>Creates a Scaffold containing an Appbar, BottomNavigationBar and FloatingActionButton</td>
@@ -84,8 +96,12 @@ The following commands are supported:
     <td>stfulBldr</td>
     <td>Creates a StatefulBuilder</td>
   </tr>
+      <tr>
+    <td>text</td>
+    <td>Creates a Text Widget</td>
+  </tr>
 </table>]]></description>
-    <change-notes>New icon thanks to the wonderful work of https://www.domoredg.com/</change-notes>
+    <change-notes>Some new minor widgets. Row, Column, Text and Container</change-notes>
     <idea-version since-build="141.0" />
     <depends>com.intellij.modules.java</depends>
     <extensions defaultExtensionNs="com.intellij">

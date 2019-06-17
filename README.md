@@ -12,6 +12,8 @@ An Intellij & Android Studio plugin that adds Live Templates to your IDE saving 
 | ---------- | ------------------------ | -------------- |
 |`alertDialog`|[View Docs](https://docs.flutter.io/flutter/widgets/AlertDialog-class.html)|Creates a showDialog that returns with AlertDialog|
 |`animBldr`|[View Docs](https://docs.flutter.io/flutter/widgets/AnimationBuilder-class.html)|Creates an AnimationBuilder|
+|`column`|[View Docs](https://docs.flutter.io/flutter/widgets/Column-class.html)|Creates a Column Widget|
+|`container`|[View Docs](https://docs.flutter.io/flutter/widgets/Container-class.html)|Creates a Container Widget|
 |`customClipper`|[View Docs](https://api.flutter.dev/flutter/rendering/CustomClipper-class.html)|Creates a CustomClipper|
 |`customPainter`|[View Docs](https://api.flutter.dev/flutter/rendering/CustomPainter-class.html)|Creates a CustomPainter|
 |`customScrollV`|[View Docs](https://api.flutter.dev/flutter/widgets/CustomScrollView-class.html)|Creates a CustomScrollView|
@@ -21,6 +23,7 @@ An Intellij & Android Studio plugin that adds Live Templates to your IDE saving 
 |`layoutBldr`|[View Docs](https://api.flutter.dev/flutter/widgets/LayoutBuilder-class.html)|Creates a LayoutBuilder|
 |`listViewBldr`|[View Docs](https://docs.flutter.io/flutter/widgets/ListView.builder.html)|Creates a ListView.builder()|
 |`orienatatBldr`|[View Docs](https://api.flutter.dev/flutter/widgets/OrientationBuilder-class.html)|Creates a OrientationBuilder|
+|`row`|[View Docs](https://docs.flutter.io/flutter/widgets/Row-class.html)|Creates a Row Widget|
 |`scfAll`|[View Docs](https://docs.flutter.io/flutter/material/Scaffold-class.html)|Creates a Scaffold containing an Appbar, BottomNavigationBar and FloatingActionButton|
 |`scfAppBar`| |Creates a Scaffold containing an Appbar|
 |`scfAppBarFab`| |Creates a Scaffold containing an Appbar and Floating Action Button|
@@ -28,6 +31,7 @@ An Intellij & Android Studio plugin that adds Live Templates to your IDE saving 
 |`singleChildScrollV`|[View Docs](https://api.flutter.dev/flutter/widgets/SingleChildScrollView-class.html)|Creates a SingleChildScrollView|
 |`streamBldr`|[View Docs](https://docs.flutter.io/flutter/widgets/StreamBuilder-class.html)|Creates a StreamBuilder|
 |`stfulBldr`|[View Docs](https://api.flutter.dev/flutter/widgets/StatefulBuilder/StatefulBuilder.html)|Creates a StatefulBuilder|
+|`text`|[View Docs](https://docs.flutter.io/flutter/widgets/Text-class.html)|Creates a Text Widget|
 
 ## Plugin Supports the Following IDEs:
 * Android Studio
