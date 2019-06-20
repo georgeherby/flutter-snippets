@@ -2,7 +2,7 @@
 <idea-plugin>
     <id>com.herbert.george.flutter-snippets</id>
     <name>Flutter Snippets</name>
-    <version>0.1.7</version>
+    <version>0.1.8</version>
     <vendor>George Herbert</vendor>
     <description><![CDATA[
 <p>Provides live templates for Flutter to save time writing boilerplate.</p>
@@ -21,6 +21,10 @@ The following commands are supported:
     <td>Creates an AnimationBuilder</td>
   </tr>
     <tr>
+    <td>aspectRatio</td>
+    <td>Creates an AspectRatio</td>
+  </tr>
+      <tr>
     <td>column</td>
     <td>Creates a Column Widget</td>
   </tr>
@@ -101,7 +105,7 @@ The following commands are supported:
     <td>Creates a Text Widget</td>
   </tr>
 </table>]]></description>
-    <change-notes>Some new minor widgets. Row, Column, Text and Container</change-notes>
+    <change-notes>AspectRatio (Flutter Widget of the Week)</change-notes>
     <idea-version since-build="141.0" />
     <depends>com.intellij.modules.java</depends>
     <extensions defaultExtensionNs="com.intellij">

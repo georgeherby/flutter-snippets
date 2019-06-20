@@ -12,6 +12,7 @@ An Intellij & Android Studio plugin that adds Live Templates to your IDE saving 
 | ---------- | ------------------------ | -------------- |
 |`alertDialog`|[View Docs](https://docs.flutter.io/flutter/widgets/AlertDialog-class.html)|Creates a showDialog that returns with AlertDialog|
 |`animBldr`|[View Docs](https://docs.flutter.io/flutter/widgets/AnimationBuilder-class.html)|Creates an AnimationBuilder|
+|`aspectRatio`|[View Docs](https://api.flutter.dev/flutter/widgets/AspectRatio-class.html)|Creates an AspectRatio|
 |`column`|[View Docs](https://docs.flutter.io/flutter/widgets/Column-class.html)|Creates a Column Widget|
 |`container`|[View Docs](https://docs.flutter.io/flutter/widgets/Container-class.html)|Creates a Container Widget|
 |`customClipper`|[View Docs](https://api.flutter.dev/flutter/rendering/CustomClipper-class.html)|Creates a CustomClipper|

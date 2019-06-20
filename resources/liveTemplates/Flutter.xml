@@ -187,5 +187,13 @@
             <option name="DART_STATEMENT" value="true" />
         </context>
     </template>
-    
+
+<!--    AspectRatio-->
+    <template name="aspectRatio" value="AspectRatio(&#10;aspectRatio: $aspectRatio$,&#10;child: $child$&#10;)" description="New AspectRatio Widget" toReformat="false" toShortenFQNames="true">
+        <variable name="aspectRatio" expression="$aspectRatio$" defaultValue="" alwaysStopAt="true" />
+        <variable name="child" expression="$child$" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_STATEMENT" value="true" />
+        </context>
+    </template>
 </templateSet>
