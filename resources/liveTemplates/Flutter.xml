@@ -10,7 +10,7 @@
         </context>
     </template>
     <!--    CustomScrollView-->
-    <template name="customScrollV" value="CustomScrollView(&#10;slivers: &lt;Widget&gt;[&#10;$childWidget1$,&#10;$childWidget2$,&#10;$childWidget3$,&#10;],&#10;)" description="New CustomScrollView" toReformat="false" toShortenFQNames="true">
+    <template name="customScrollV" value="CustomScrollView(&#10;slivers: &lt;Widget&gt;[&#10;$childWidget1$,&#10;$childWidget2$,&#10;$childWidget3$,&#10;],&#10;)," description="New CustomScrollView" toReformat="false" toShortenFQNames="true">
         <variable name="childWidget1" expression="&quot;childWidget1&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="childWidget2" expression="&quot;childWidget2&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="childWidget3" expression="&quot;childWidget3&quot;" defaultValue="" alwaysStopAt="true" />
@@ -154,7 +154,7 @@
 
 <!--    Container-->
 
-    <template name="container" value="Container(&#10;  child: $Widget$(),&#10;)" description="Create Container Widget" toReformat="true" toShortenFQNames="true">
+    <template name="container" value="Container(&#10;  child: $Widget$(),&#10;)," description="Create Container Widget" toReformat="true" toShortenFQNames="true">
         <variable name="Widget" expression="&quot;Widget&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="DART_STATEMENT" value="true" />
@@ -163,7 +163,7 @@
 
 <!--    Row-->
 
-    <template name="row" value="Row(&#10;  children: &lt;Widget&gt;[$goto$],&#10;)" description="Create Row Widget" toReformat="true" toShortenFQNames="true">
+    <template name="row" value="Row(&#10;  children: &lt;Widget&gt;[$goto$],&#10;)," description="Create Row Widget" toReformat="true" toShortenFQNames="true">
         <variable name="goto" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="DART_STATEMENT" value="true" />
@@ -172,7 +172,7 @@
 
 <!--    Column-->
 
-    <template name="column" value="Column(&#10;  children: &lt;Widget&gt;[$goto$],&#10;)" description="Create Column Widget" toReformat="true" toShortenFQNames="true">
+    <template name="column" value="Column(&#10;  children: &lt;Widget&gt;[$goto$],&#10;)," description="Create Column Widget" toReformat="true" toShortenFQNames="true">
         <variable name="goto" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="DART_STATEMENT" value="true" />
@@ -181,7 +181,7 @@
 
 <!--    Text-->
 
-    <template name="text" value="Text('$text$')" description="Create Text Widget" toReformat="true" toShortenFQNames="true">
+    <template name="text" value="Text('$text$')," description="Create Text Widget" toReformat="true" toShortenFQNames="true">
         <variable name="text" expression="&quot;text&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="DART_STATEMENT" value="true" />
@@ -189,7 +189,7 @@
     </template>
 
 <!--    AspectRatio-->
-    <template name="aspectRatio" value="AspectRatio(&#10;aspectRatio: $aspectRatio$,&#10;child: $child$&#10;)" description="New AspectRatio Widget" toReformat="false" toShortenFQNames="true">
+    <template name="aspectRatio" value="AspectRatio(&#10;aspectRatio: $aspectRatio$,&#10;child: $child$&#10;)," description="New AspectRatio Widget" toReformat="false" toShortenFQNames="true">
         <variable name="aspectRatio" expression="$aspectRatio$" defaultValue="" alwaysStopAt="true" />
         <variable name="child" expression="$child$" defaultValue="" alwaysStopAt="true" />
         <context>
