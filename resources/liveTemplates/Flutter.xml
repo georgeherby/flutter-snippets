@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Flutter">
     <!--    AnimatedBuilder    -->
-    <template name="animBldr" value="AnimatedBuilder(&#10;  animation: $animationController$,&#10;  child: $childWidget$,&#10;  builder: (BuildContext context, Widget child) {&#10;    return $buildWidget$;&#10;  },&#10;);" description="New AnimatedBuilder" toReformat="false" toShortenFQNames="true">
+    <template name="animatedBldr" value="AnimatedBuilder(&#10;  animation: $animationController$,&#10;  child: $childWidget$,&#10;  builder: (BuildContext context, Widget child) {&#10;    return $buildWidget$;&#10;  },&#10;);" description="New AnimatedBuilder" toReformat="false" toShortenFQNames="true">
         <variable name="animationController" expression="&quot;animationController&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="childWidget" expression="&quot;childWidget&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="buildWidget" expression="&quot;buildWidget&quot;" defaultValue="" alwaysStopAt="true" />
@@ -37,7 +37,7 @@
         </context>
     </template>
     <!--    SingleChildScrollView-->
-    <template name="singleChildScrollV" value="SingleChildScrollView(&#10;controller: $controller$, // Optional&#10;child: $widget$,&#10;)," description="New SingleChildScrollView" toReformat="false" toShortenFQNames="true">
+    <template name="singleChildSV" value="SingleChildScrollView(&#10;controller: $controller$, // Optional&#10;child: $widget$,&#10;)," description="New SingleChildScrollView" toReformat="false" toShortenFQNames="true">
         <variable name="controller" expression="&quot;controller&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="widget" expression="&quot;widget&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
@@ -60,7 +60,7 @@
     <template name="listviewBldr"
               value="ListView.builder(itemCount: $COUNT$,itemBuilder: (BuildContext context, int index) {return $WIDGET$;}, ),"
               description="Create ListView.builder" toReformat="true" toShortenFQNames="true">
-        <variable name="COUNT" expression="&quot;future&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="COUNT" expression="&quot;count&quot;" defaultValue="" alwaysStopAt="true"/>
         <variable name="WIDGET" expression="&quot;widget&quot;" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="DART_STATEMENT" value="true"/>
@@ -113,26 +113,26 @@
         </context>
     </template>
     <!--    StatefulBuilder-->
-    <template name="stfulBldr" value="StatefulBuilder(&#10;builder: (BuildContext context, StateSetter setState){&#10;return $widget$&#10;}&#10;)," description="New Stateful Builder" toReformat="false" toShortenFQNames="true">
+    <template name="statefulBldr" value="StatefulBuilder(&#10;builder: (BuildContext context, StateSetter setState){&#10;return $widget$&#10;}&#10;)," description="New Stateful Builder" toReformat="false" toShortenFQNames="true">
         <variable name="widget" expression="&quot;widget&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="DART_STATEMENT" value="true" />
         </context>
     </template>
     <!--    OrientationBuilder-->
-    <template name="orientatBldr" value="OrientationBuilder(&#10;  builder: (BuildContext context, Orientation orientation) {&#10;return GridView.count(&#10;// Create a grid with 2 columns in portrait mode, or 3 columns in&#10;// landscape mode.&#10;crossAxisCount: orientation == Orientation.portrait ? 2 : 3,&#10;);&#10;},&#10;);" description="New OrientationBuilder" toReformat="false" toShortenFQNames="true">
+    <template name="orientationBldr" value="OrientationBuilder(&#10;  builder: (BuildContext context, Orientation orientation) {&#10;return GridView.count(&#10;// Create a grid with 2 columns in portrait mode, or 3 columns in&#10;// landscape mode.&#10;crossAxisCount: orientation == Orientation.portrait ? 2 : 3,&#10;);&#10;},&#10;);" description="New OrientationBuilder" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="DART_STATEMENT" value="true" />
         </context>
     </template>
     <!--    Material Package Import-->
-    <template name="importMat" value="import 'package:flutter/material.dart';" description="Import Material Package" toReformat="false" toShortenFQNames="true">
+    <template name="importM" value="import 'package:flutter/material.dart';" description="Import Material Package" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="DART_TOPLEVEL" value="true" />
         </context>
     </template>
     <!--    Cupertino Package Import-->
-    <template name="importCup" value="import 'package:flutter/cupertino.dart';" description="Import Cupertino Package" toReformat="false" toShortenFQNames="true">
+    <template name="importC" value="import 'package:flutter/cupertino.dart';" description="Import Cupertino Package" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="DART_TOPLEVEL" value="true" />
         </context>
@@ -196,4 +196,43 @@
             <option name="DART_STATEMENT" value="true" />
         </context>
     </template>
+
+    <!--    Cupertino App-->
+
+    <template name="cupeApp" value="import 'package:flutter/cupertino.dart';&#10; &#10;void main() =&gt; runApp($className$());&#10; &#10;class $className$ extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return CupertinoApp(&#10;      title: 'Cupertino App',&#10;      home: CupertinoPageScaffold(&#10;        navigationBar: CupertinoNavigationBar(&#10;          middle: Text('Cupertino App Bar'),&#10;        ),&#10;        child: Center(&#10;          child: Container(&#10;            child: Text('Hello World'),&#10;          ),&#10;        ),&#10;      ),&#10;    );&#10;  }&#10;}" description="Create a New Cupertino App" toReformat="false" toShortenFQNames="true">
+        <variable name="className" expression="&quot;MyApp&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_TOPLEVEL" value="true" />
+        </context>
+    </template>
+
+    <!--    Material App-->
+
+    <template name="mateApp" value="import 'package:flutter/material.dart';&#10; &#10;void main() =&gt; runApp($className$());&#10; &#10;class $className$ extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return MaterialApp(&#10;      title: 'Material App',&#10;      home: Scaffold(&#10;        appBar: AppBar(&#10;          title: Text('Material App Bar'),&#10;        ),&#10;        body: Center(&#10;          child: Container(&#10;            child: Text('Hello World'),&#10;          ),&#10;        ),&#10;      ),&#10;    );&#10;  }&#10;}" description="Create a New Material App" toReformat="false" toShortenFQNames="true">
+        <variable name="className" expression="&quot;MyApp&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_TOPLEVEL" value="true" />
+        </context>
+    </template>
+
+    <!--    initState-->
+
+    <template name="initS" value="@override&#10;void initState() { &#10;  super.initState();&#10;  // Add code after super&#10;}" description="Add initState Override" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="DART_STATEMENT" value="true" />
+        </context>
+    </template>
+
+    <!--    Dispose-->
+
+    <template name="dis" value="@override&#10;void dispose() { &#10;  // Add code before the super&#10;  super.dispose();&#10;}" description="Add dispose Override" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="DART_STATEMENT" value="true" />
+        </context>
+    </template>
+
+
+
+
+
 </templateSet>

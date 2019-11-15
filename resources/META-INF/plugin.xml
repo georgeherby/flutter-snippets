@@ -2,7 +2,7 @@
 <idea-plugin>
     <id>com.herbert.george.flutter-snippets</id>
     <name>Flutter Snippets</name>
-    <version>0.1.9</version>
+    <version>1.0.0-beta</version>
     <vendor>George Herbert</vendor>
     <description><![CDATA[
 <p>Provides live templates for Flutter to save time writing boilerplate.</p>
@@ -105,7 +105,7 @@ The following commands are supported:
     <td>Creates a Text Widget</td>
   </tr>
 </table>]]></description>
-    <change-notes>Fix trailing commas on some widgets to help dartfmt</change-notes>
+    <change-notes>[Breaking Changes] - A overhaul to bring us in line with the VS plugin and make short cuts consistent ADD NEW WIDEGETS TO ABOVE TABLE</change-notes>
     <idea-version since-build="141.0" />
     <depends>com.intellij.modules.java</depends>
     <extensions defaultExtensionNs="com.intellij">
