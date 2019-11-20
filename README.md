@@ -28,6 +28,7 @@ An Intellij & Android Studio plugin that adds Live Templates to your IDE saving 
 |`singleChildSV`|Single Child Scroll View|Creates a scroll view with a single child|[View Docs](https://api.flutter.dev/flutter/widgets/SingleChildScrollView-class.html)|
 |`streamBldr`| Stream Builder |Creates a new StreamBuilder that builds itself based on the latest snapshot of interaction with the specified stream |[View Docs](https://docs.flutter.io/flutter/widgets/StreamBuilder-class.html)|
 |`statefulBldr`|Stateful Builder|Creates a widget that both has state and delegates its build to a callback. Useful for rebuilding specific sections of the widget tree.|[View Docs](https://api.flutter.dev/flutter/widgets/StatefulBuilder/StatefulBuilder.html)|
+|`subj`|Subject|A BehaviorSubject is also a broadcast StreamController which returns an Observable rather than a Stream.|[View Docs](https://pub.dev/documentation/rxdart/latest/rx/BehaviorSubject-class.html)|
 |`text`| |Creates a Text Widget|[View Docs](https://docs.flutter.io/flutter/widgets/Text-class.html)|
 
 ### Cupertino Specific
