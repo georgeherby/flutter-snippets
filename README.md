@@ -10,12 +10,12 @@ An Intellij & Android Studio plugin that adds Live Templates to your IDE saving 
 ### Generic
 | Shortcut|Expanded|Description|Flutter Docs| 
 | ---------- | ----------| -------------- | -------------- |
-|`alertDialog`| |Creates a showDialog that returns with AlertDialog|[View Docs](https://docs.flutter.io/flutter/widgets/AlertDialog-class.html)|
+|`alertDialog`|Alert Dialog |Creates a showDialog that returns with AlertDialog|[View Docs](https://docs.flutter.io/flutter/widgets/AlertDialog-class.html)|
 |`animatedBldr`|Animated Builder|Creates an Animated Builder. The child widget  is passed to the builder|[View Docs](https://docs.flutter.io/flutter/widgets/AnimationBuilder-class.html)|
-|`aspectRatio`| |Creates an AspectRatio|[View Docs](https://api.flutter.dev/flutter/widgets/AspectRatio-class.html)|
+|`aspectRatio`| AspectRatio |Creates an AspectRatio|[View Docs](https://api.flutter.dev/flutter/widgets/AspectRatio-class.html)|
 |`build`|Build Method|Describes the part of the user interface represented by the widget.| |
-|`column`| |Creates a Column Widget|[View Docs](https://docs.flutter.io/flutter/widgets/Column-class.html)|
-|`container`| |Creates a Container Widget|[View Docs](https://docs.flutter.io/flutter/widgets/Container-class.html)|
+|`column`| Column |Creates a Column Widget|[View Docs](https://docs.flutter.io/flutter/widgets/Column-class.html)|
+|`container`| Container |Creates a Container Widget|[View Docs](https://docs.flutter.io/flutter/widgets/Container-class.html)|
 |`customClipper`|Custom Clipper|Used for creating custom shapes|[View Docs](https://api.flutter.dev/flutter/rendering/CustomClipper-class.html)|
 |`customPainter`|Custom Painter|Used for creating custom paint|[View Docs](https://api.flutter.dev/flutter/rendering/CustomPainter-class.html)|
 |`customScrollV`| Custom ScrollView|Creates a ScrollView that creates custom scroll effects using slivers. If the primary argument is true, the controller must be null.|[View Docs](https://api.flutter.dev/flutter/widgets/CustomScrollView-class.html)|
@@ -36,10 +36,10 @@ An Intellij & Android Studio plugin that adds Live Templates to your IDE saving 
 |`statefulBldr`|Stateful Builder|Creates a widget that both has state and delegates its build to a callback. Useful for rebuilding specific sections of the widget tree.|[View Docs](https://api.flutter.dev/flutter/widgets/StatefulBuilder/StatefulBuilder.html)|
 |`strm`|StreamController|A source of asynchronous data events. A stream can be of any data type.|[View Docs](https://api.dartlang.org/stable/dart-async/StreamController-class.html)|
 |`subj`|BehaviorSubject|A BehaviorSubject is also a broadcast StreamController which returns an Observable rather than a Stream.|[View Docs](https://pub.dev/documentation/rxdart/latest/rx/BehaviorSubject-class.html)|
-|`txt`| |Creates a Text Widget|[View Docs](https://docs.flutter.io/flutter/widgets/Text-class.html)|
+|`txt`| Text |Creates a Text Widget|[View Docs](https://docs.flutter.io/flutter/widgets/Text-class.html)|
 |`toStr`|To String|Returns a string representation of this object.|[View Docs](https://docs.flutter.io/flutter/widgets/Text-class.html)|
 |`tweenAnimationBldr`|Tween Animation Builder|Widget builder that animates a property of a Widget to a target value whenever the target value changes.|[View Docs](https://api.flutter.dev/flutter/animation/Tween-class.html)|
-|`valueListenableBldr`|Given a ValueListenable and a builder which builds widgets from concrete values of T, this class will automatically register itself as a listener of the ValueListenable and call the builder with updated values when the value changes.|[View Docs](https://api.flutter.dev/flutter/widgets/ValueListenableBuilder-class.html)|
+|`valueListenableBldr`|Value Listenable Builder |Given a ValueListenable and a builder which builds widgets from concrete values of T, this class will automatically register itself as a listener of the ValueListenable and call the builder with updated values when the value changes.|[View Docs](https://api.flutter.dev/flutter/widgets/ValueListenableBuilder-class.html)|
 
 ### Cupertino Specific
 | Shortcut| Expanded | Description| Flutter Docs |
