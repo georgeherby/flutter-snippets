@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Flutter">
     <!--    AnimatedBuilder    -->
-    <template name="animatedBldr" value="AnimatedBuilder(&#10;  animation: $animationController$,&#10;  child: $childWidget$,&#10;  builder: (BuildContext context, Widget child) {&#10;    return $buildWidget$;&#10;  },&#10;);" description="New AnimatedBuilder" toReformat="true" toShortenFQNames="true">
-        <variable name="animationController" expression="&quot;animationController&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="childWidget" expression="&quot;childWidget&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="buildWidget" expression="&quot;buildWidget&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="animatedBldr"
+              value="AnimatedBuilder(&#10;  animation: $animationController$,&#10;  child: $childWidget$,&#10;  builder: (BuildContext context, Widget child) {&#10;    return $buildWidget$;&#10;  },&#10;);"
+              description="New AnimatedBuilder" toReformat="true" toShortenFQNames="true">
+        <variable name="animationController" expression="&quot;animationController&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="childWidget" expression="&quot;childWidget&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="buildWidget" expression="&quot;buildWidget&quot;" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="DART_STATEMENT" value="true" />
+            <option name="DART_STATEMENT" value="true"/>
         </context>
     </template>
     <!--    CustomScrollView-->
-    <template name="customScrollV" value="CustomScrollView(&#10;slivers: &lt;Widget&gt;[&#10;$childWidget1$,&#10;$childWidget2$,&#10;$childWidget3$,&#10;],&#10;)," description="New CustomScrollView" toReformat="true" toShortenFQNames="true">
-        <variable name="childWidget1" expression="&quot;childWidget1&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="childWidget2" expression="&quot;childWidget2&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="childWidget3" expression="&quot;childWidget3&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="customScrollV"
+              value="CustomScrollView(&#10;slivers: &lt;Widget&gt;[&#10;$childWidget1$,&#10;$childWidget2$,&#10;$childWidget3$,&#10;],&#10;),"
+              description="New CustomScrollView" toReformat="true" toShortenFQNames="true">
+        <variable name="childWidget1" expression="&quot;childWidget1&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="childWidget2" expression="&quot;childWidget2&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="childWidget3" expression="&quot;childWidget3&quot;" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="DART_STATEMENT" value="true" />
+            <option name="DART_STATEMENT" value="true"/>
         </context>
     </template>
     <!--    FutureBuilder-->
@@ -30,18 +34,21 @@
         </context>
     </template>
     <!--    LayoutBuilder-->
-    <template name="layoutBldr" value="LayoutBuilder(&#10;builder: (BuildContext context, BoxConstraints constraints) {&#10;return $widget$;&#10;},&#10;)," description="New LayoutBuilder" toReformat="true" toShortenFQNames="true">
-        <variable name="widget" expression="&quot;widget&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="layoutBldr"
+              value="LayoutBuilder(&#10;builder: (BuildContext context, BoxConstraints constraints) {&#10;return $widget$;&#10;},&#10;),"
+              description="New LayoutBuilder" toReformat="true" toShortenFQNames="true">
+        <variable name="widget" expression="&quot;widget&quot;" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="DART_STATEMENT" value="true" />
+            <option name="DART_STATEMENT" value="true"/>
         </context>
     </template>
     <!--    SingleChildScrollView-->
-    <template name="singleChildSV" value="SingleChildScrollView(&#10;controller: $controller$, // Optional&#10;child: $widget$,&#10;)," description="New SingleChildScrollView" toReformat="true" toShortenFQNames="true">
-        <variable name="controller" expression="&quot;controller&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="widget" expression="&quot;widget&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="singleChildSV" value="SingleChildScrollView(&#10;controller: $controller$, // Optional&#10;child: $widget$,&#10;),"
+              description="New SingleChildScrollView" toReformat="true" toShortenFQNames="true">
+        <variable name="controller" expression="&quot;controller&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="widget" expression="&quot;widget&quot;" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="DART_STATEMENT" value="true" />
+            <option name="DART_STATEMENT" value="true"/>
         </context>
     </template>
     <!--    StreamBuilder-->
@@ -80,164 +87,318 @@
         </context>
     </template>
     <!--    New Scaffold with AppBar, Fab and Bottom Nav Bar-->
-    <template name="scfAll" value="int _index = 0; // Make sure this is outside build(), otherwise every setState will chage the value back to 0 &#10;&#10;return Scaffold(&#10;appBar: AppBar(&#10;title: Text('$appbarTitle$'),&#10;),&#10;body: Center(&#10;child: Container(child: Text('You are looking at the message for bottom navigation item $_index')),&#10;),&#10;bottomNavigationBar: BottomNavigationBar(&#10;onTap: (tappedItemIndex)=&gt; setState(() {&#10;_index = tappedItemIndex;&#10;}),&#10;currentIndex: _index,&#10;items: [&#10;BottomNavigationBarItem(icon: Icon(Icons.av_timer), title: Text('$navBarItem1Text$')),&#10;BottomNavigationBarItem(icon: Icon(Icons.add), title: Text('$navBarItem2Text$'))&#10;]),&#10;floatingActionButton: FloatingActionButton(&#10;onPressed: () =&gt; setState(() {&#10;=_index = 0;&#10;}),&#10;tooltip: 'Reset Navigation Index',&#10;        child: Icon(Icons.clear), //Change Icon&#10;),&#10;floatingActionButtonLocation: FloatingActionButtonLocation.endFloat, //Change for different locations&#10;);" description="New Scaffold with AppBar, Fab and Bottom Nav Bar" toReformat="true" toShortenFQNames="true">
-        <variable name="appbarTitle" expression="&quot;appbarTitle&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="navBarItem1Text" expression="&quot;navBarItem1Text&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="navBarItem2Text" expression="&quot;navBarItem2Text&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="scfAll"
+              value="int _index = 0; // Make sure this is outside build(), otherwise every setState will chage the value back to 0 &#10;&#10;return Scaffold(&#10;appBar: AppBar(&#10;title: Text('$appbarTitle$'),&#10;),&#10;body: Center(&#10;child: Container(child: Text('You are looking at the message for bottom navigation item $_index')),&#10;),&#10;bottomNavigationBar: BottomNavigationBar(&#10;onTap: (tappedItemIndex)=&gt; setState(() {&#10;_index = tappedItemIndex;&#10;}),&#10;currentIndex: _index,&#10;items: [&#10;BottomNavigationBarItem(icon: Icon(Icons.av_timer), title: Text('$navBarItem1Text$')),&#10;BottomNavigationBarItem(icon: Icon(Icons.add), title: Text('$navBarItem2Text$'))&#10;]),&#10;floatingActionButton: FloatingActionButton(&#10;onPressed: () =&gt; setState(() {&#10;=_index = 0;&#10;}),&#10;tooltip: 'Reset Navigation Index',&#10;        child: Icon(Icons.clear), //Change Icon&#10;),&#10;floatingActionButtonLocation: FloatingActionButtonLocation.endFloat, //Change for different locations&#10;);"
+              description="New Scaffold with AppBar, Fab and Bottom Nav Bar" toReformat="true" toShortenFQNames="true">
+        <variable name="appbarTitle" expression="&quot;appbarTitle&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="navBarItem1Text" expression="&quot;navBarItem1Text&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="navBarItem2Text" expression="&quot;navBarItem2Text&quot;" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="DART_STATEMENT" value="true" />
+            <option name="DART_STATEMENT" value="true"/>
         </context>
     </template>
     <!--    New Scaffold with AppBar-->
-    <template name="scfAppBar" value="return Scaffold(&#10;appBar: AppBar(&#10;title: Text('$appbarTitle$'),&#10;),&#10;body: $body$&#10;);" description="New Scaffold with AppBar" toReformat="true" toShortenFQNames="true">
-        <variable name="appbarTitle" expression="&quot;appbarTitle&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="body" expression="&quot;bodyWidget&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="scfAppBar" value="return Scaffold(&#10;appBar: AppBar(&#10;title: Text('$appbarTitle$'),&#10;),&#10;body: $body$&#10;);"
+              description="New Scaffold with AppBar" toReformat="true" toShortenFQNames="true">
+        <variable name="appbarTitle" expression="&quot;appbarTitle&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="body" expression="&quot;bodyWidget&quot;" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="DART_STATEMENT" value="true" />
+            <option name="DART_STATEMENT" value="true"/>
         </context>
     </template>
     <!--    New Scaffold with AppBar and Fab-->
-    <template name="scfAppBarFab" value="int _index = 0; // Make sure this is outside build(), otherwise every setState will chage the value back to 0 &#10;&#10;return Scaffold(&#10;appBar: AppBar(&#10;        title: Text('$appbarTitle$'),&#10;),&#10;body: Center(&#10;child: Container(child: Text('You tapped the FAB $_index times')),&#10;),&#10;floatingActionButton: FloatingActionButton(&#10;onPressed: () =&gt; setState(() {&#10;_index++;&#10;}),&#10;tooltip: 'Increment Counter',&#10;child: Icon(Icons.add), //Change Icon&#10;),&#10;floatingActionButtonLocation: FloatingActionButtonLocation.endFloat, //Change for different locations&#10;);" description="New Scaffold with AppBar and Fab" toReformat="true" toShortenFQNames="true">
-        <variable name="appbarTitle" expression="&quot;appbarTitle&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="scfAppBarFab"
+              value="int _index = 0; // Make sure this is outside build(), otherwise every setState will chage the value back to 0 &#10;&#10;return Scaffold(&#10;appBar: AppBar(&#10;        title: Text('$appbarTitle$'),&#10;),&#10;body: Center(&#10;child: Container(child: Text('You tapped the FAB $_index times')),&#10;),&#10;floatingActionButton: FloatingActionButton(&#10;onPressed: () =&gt; setState(() {&#10;_index++;&#10;}),&#10;tooltip: 'Increment Counter',&#10;child: Icon(Icons.add), //Change Icon&#10;),&#10;floatingActionButtonLocation: FloatingActionButtonLocation.endFloat, //Change for different locations&#10;);"
+              description="New Scaffold with AppBar and Fab" toReformat="true" toShortenFQNames="true">
+        <variable name="appbarTitle" expression="&quot;appbarTitle&quot;" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="DART_STATEMENT" value="true" />
+            <option name="DART_STATEMENT" value="true"/>
         </context>
     </template>
     <!--    New Scaffold with AppBar and Bottom Nav Bar-->
-    <template name="scfAppBarBtmNav" value="int _index = 0; // Make sure this is outside build(), otherwise every setState will change the value back to 0 &#10;&#10;return Scaffold(&#10;appBar: AppBar(&#10;title: Text('$appbarTitle$'),&#10;),&#10;body: Center(&#10;child: Container(child: Text('You are looking at the message for bottom navigation item $_index')),&#10;),&#10;bottomNavigationBar: BottomNavigationBar(&#10;onTap: (tappedItemIndex) =&gt; setState(() {&#10;_index = tappedItemIndex;&#10; }),&#10;currentIndex: _index,&#10;items: [&#10;BottomNavigationBarItem(icon: Icon(Icons.av_timer), title: Text('$navBarItem1Text$')),&#10;BottomNavigationBarItem(icon: Icon(Icons.add), title: Text('$navBarItem2Text$'))&#10;])&#10;);" description="New Scaffold with AppBar &amp; Bottom Nav Bar" toReformat="true" toShortenFQNames="true">
-        <variable name="appbarTitle" expression="&quot;appbarTitle&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="navBarItem1Text" expression="&quot;navBarItem1Text&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="navBarItem2Text" expression="&quot;navBarItem2Text&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="scfAppBarBtmNav"
+              value="int _index = 0; // Make sure this is outside build(), otherwise every setState will change the value back to 0 &#10;&#10;return Scaffold(&#10;appBar: AppBar(&#10;title: Text('$appbarTitle$'),&#10;),&#10;body: Center(&#10;child: Container(child: Text('You are looking at the message for bottom navigation item $_index')),&#10;),&#10;bottomNavigationBar: BottomNavigationBar(&#10;onTap: (tappedItemIndex) =&gt; setState(() {&#10;_index = tappedItemIndex;&#10; }),&#10;currentIndex: _index,&#10;items: [&#10;BottomNavigationBarItem(icon: Icon(Icons.av_timer), title: Text('$navBarItem1Text$')),&#10;BottomNavigationBarItem(icon: Icon(Icons.add), title: Text('$navBarItem2Text$'))&#10;])&#10;);"
+              description="New Scaffold with AppBar &amp; Bottom Nav Bar" toReformat="true" toShortenFQNames="true">
+        <variable name="appbarTitle" expression="&quot;appbarTitle&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="navBarItem1Text" expression="&quot;navBarItem1Text&quot;" defaultValue="" alwaysStopAt="true"/>
+        <variable name="navBarItem2Text" expression="&quot;navBarItem2Text&quot;" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="DART_STATEMENT" value="true" />
+            <option name="DART_STATEMENT" value="true"/>
         </context>
     </template>
     <!--    StatefulBuilder-->
-    <template name="statefulBldr" value="StatefulBuilder(&#10;builder: (BuildContext context, StateSetter setState){&#10;return $widget$&#10;}&#10;)," description="New Stateful Builder" toReformat="true" toShortenFQNames="true">
-        <variable name="widget" expression="&quot;widget&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="statefulBldr"
+              value="StatefulBuilder(&#10;builder: (BuildContext context, StateSetter setState){&#10;return $widget$&#10;}&#10;),"
+              description="New Stateful Builder" toReformat="true" toShortenFQNames="true">
+        <variable name="widget" expression="&quot;widget&quot;" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="DART_STATEMENT" value="true" />
+            <option name="DART_STATEMENT" value="true"/>
         </context>
     </template>
     <!--    OrientationBuilder-->
-    <template name="orientationBldr" value="OrientationBuilder(&#10;  builder: (BuildContext context, Orientation orientation) {&#10;return GridView.count(&#10;// Create a grid with 2 columns in portrait mode, or 3 columns in&#10;// landscape mode.&#10;crossAxisCount: orientation == Orientation.portrait ? 2 : 3,&#10;);&#10;},&#10;);" description="New OrientationBuilder" toReformat="true" toShortenFQNames="true">
+    <template name="orientationBldr"
+              value="OrientationBuilder(&#10;  builder: (BuildContext context, Orientation orientation) {&#10;return GridView.count(&#10;// Create a grid with 2 columns in portrait mode, or 3 columns in&#10;// landscape mode.&#10;crossAxisCount: orientation == Orientation.portrait ? 2 : 3,&#10;);&#10;},&#10;);"
+              description="New OrientationBuilder" toReformat="true" toShortenFQNames="true">
         <context>
-            <option name="DART_STATEMENT" value="true" />
+            <option name="DART_STATEMENT" value="true"/>
         </context>
     </template>
     <!--    Material Package Import-->
-    <template name="importM" value="import 'package:flutter/material.dart';" description="Import Material Package" toReformat="true" toShortenFQNames="true">
+    <template name="importM" value="import 'package:flutter/material.dart';" description="Import Material Package" toReformat="true"
+              toShortenFQNames="true">
         <context>
-            <option name="DART_TOPLEVEL" value="true" />
+            <option name="DART_TOPLEVEL" value="true"/>
         </context>
     </template>
     <!--    Cupertino Package Import-->
-    <template name="importC" value="import 'package:flutter/cupertino.dart';" description="Import Cupertino Package" toReformat="true" toShortenFQNames="true">
+    <template name="importC" value="import 'package:flutter/cupertino.dart';" description="Import Cupertino Package" toReformat="true"
+              toShortenFQNames="true">
         <context>
-            <option name="DART_TOPLEVEL" value="true" />
+            <option name="DART_TOPLEVEL" value="true"/>
         </context>
     </template>
     <!--    CustomClipper-->
-    <template name="customClipper" value="class $name$Clipper extends CustomClipper&lt;Path&gt; {&#10;    &#10;@override&#10;Path getClip(Size size) {&#10;// TODO: implement getClip&#10;}&#10;&#10;@override&#10;bool shouldReclip(CustomClipper&lt;Path&gt; oldClipper) {&#10;// TODO: implement shouldReclip&#10;}&#10;}" description="Create CustomClipper" toReformat="true" toShortenFQNames="true">
-        <variable name="name" expression="&quot;name&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="customClipper"
+              value="class $name$Clipper extends CustomClipper&lt;Path&gt; {&#10;    &#10;@override&#10;Path getClip(Size size) {&#10;// TODO: implement getClip&#10;}&#10;&#10;@override&#10;bool shouldReclip(CustomClipper&lt;Path&gt; oldClipper) {&#10;// TODO: implement shouldReclip&#10;}&#10;}"
+              description="Create CustomClipper" toReformat="true" toShortenFQNames="true">
+        <variable name="name" expression="&quot;name&quot;" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="DART_TOPLEVEL" value="true" />
+            <option name="DART_TOPLEVEL" value="true"/>
         </context>
     </template>
     <!--    CustomPainter-->
-    <template name="customPainter" value="class $name$Painter extends CustomPainter {&#10;&#10;@override&#10;void paint(Canvas canvas, Size size) {&#10;//TODO Implement paint&#10;}&#10;&#10;      @override&#10;bool shouldRepaint($name$Painter oldDelegate) {&#10;//TODO Implement shouldRepaint&#10;}&#10;&#10;@override&#10;bool shouldRebuildSemantics($name$Painter oldDelegate) {&#10;//TODO Implement shouldRebuildSemantics&#10;}&#10;}" description="Create CustomPainter" toReformat="true" toShortenFQNames="true">
-        <variable name="name" expression="&quot;name&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="customPainter"
+              value="class $name$Painter extends CustomPainter {&#10;&#10;@override&#10;void paint(Canvas canvas, Size size) {&#10;//TODO Implement paint&#10;}&#10;&#10;      @override&#10;bool shouldRepaint($name$Painter oldDelegate) {&#10;//TODO Implement shouldRepaint&#10;}&#10;&#10;@override&#10;bool shouldRebuildSemantics($name$Painter oldDelegate) {&#10;//TODO Implement shouldRebuildSemantics&#10;}&#10;}"
+              description="Create CustomPainter" toReformat="true" toShortenFQNames="true">
+        <variable name="name" expression="&quot;name&quot;" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="DART_TOPLEVEL" value="true" />
+            <option name="DART_TOPLEVEL" value="true"/>
         </context>
     </template>
 
-<!--    Container-->
+    <!--    Container-->
 
-    <template name="container" value="Container(&#10;  child: $Widget$(),&#10;)," description="Create Container Widget" toReformat="true" toShortenFQNames="true">
-        <variable name="Widget" expression="&quot;Widget&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="container" value="Container(&#10;  child: $Widget$(),&#10;)," description="Create Container Widget" toReformat="true"
+              toShortenFQNames="true">
+        <variable name="Widget" expression="&quot;Widget&quot;" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="DART_STATEMENT" value="true" />
+            <option name="DART_STATEMENT" value="true"/>
         </context>
     </template>
 
-<!--    Row-->
+    <!--    Row-->
 
-    <template name="row" value="Row(&#10;  children: &lt;Widget&gt;[$goto$],&#10;)," description="Create Row Widget" toReformat="true" toShortenFQNames="true">
-        <variable name="goto" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="row" value="Row(&#10;  children: &lt;Widget&gt;[$goto$],&#10;)," description="Create Row Widget" toReformat="true"
+              toShortenFQNames="true">
+        <variable name="goto" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="DART_STATEMENT" value="true" />
+            <option name="DART_STATEMENT" value="true"/>
         </context>
     </template>
 
-<!--    Column-->
+    <!--    Column-->
 
-    <template name="column" value="Column(&#10;  children: &lt;Widget&gt;[$goto$],&#10;)," description="Create Column Widget" toReformat="true" toShortenFQNames="true">
-        <variable name="goto" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="column" value="Column(&#10;  children: &lt;Widget&gt;[$goto$],&#10;)," description="Create Column Widget"
+              toReformat="true" toShortenFQNames="true">
+        <variable name="goto" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="DART_STATEMENT" value="true" />
+            <option name="DART_STATEMENT" value="true"/>
         </context>
     </template>
 
-<!--    Text-->
+    <!--    Text-->
 
-    <template name="text" value="Text('$text$')," description="Create Text Widget" toReformat="true" toShortenFQNames="true">
-        <variable name="text" expression="&quot;text&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="txt" value="Text('$text$')," description="Create Text Widget" toReformat="true" toShortenFQNames="true">
+        <variable name="text" expression="&quot;text&quot;" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="DART_STATEMENT" value="true" />
+            <option name="DART_STATEMENT" value="true"/>
         </context>
     </template>
 
-<!--    AspectRatio-->
-    <template name="aspectRatio" value="AspectRatio(&#10;aspectRatio: $aspectRatio$,&#10;child: $child$&#10;)," description="New AspectRatio Widget" toReformat="true" toShortenFQNames="true">
-        <variable name="aspectRatio" expression="$aspectRatio$" defaultValue="" alwaysStopAt="true" />
-        <variable name="child" expression="$child$" defaultValue="" alwaysStopAt="true" />
+    <!--    AspectRatio-->
+    <template name="aspectRatio" value="AspectRatio(&#10;aspectRatio: $aspectRatio$,&#10;child: $child$&#10;),"
+              description="New AspectRatio Widget" toReformat="true" toShortenFQNames="true">
+        <variable name="aspectRatio" expression="$aspectRatio$" defaultValue="" alwaysStopAt="true"/>
+        <variable name="child" expression="$child$" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="DART_STATEMENT" value="true" />
+            <option name="DART_STATEMENT" value="true"/>
         </context>
     </template>
 
     <!--    Cupertino App-->
 
-    <template name="cupeApp" value="import 'package:flutter/cupertino.dart';&#10; &#10;void main() =&gt; runApp($className$());&#10; &#10;class $className$ extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return CupertinoApp(&#10;      title: 'Cupertino App',&#10;      home: CupertinoPageScaffold(&#10;        navigationBar: CupertinoNavigationBar(&#10;          middle: Text('Cupertino App Bar'),&#10;        ),&#10;        child: Center(&#10;          child: Container(&#10;            child: Text('Hello World'),&#10;          ),&#10;        ),&#10;      ),&#10;    );&#10;  }&#10;}" description="Create a New Cupertino App" toReformat="true" toShortenFQNames="true">
-        <variable name="className" expression="&quot;MyApp&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="cupeApp"
+              value="import 'package:flutter/cupertino.dart';&#10; &#10;void main() =&gt; runApp($className$());&#10; &#10;class $className$ extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return CupertinoApp(&#10;      title: 'Cupertino App',&#10;      home: CupertinoPageScaffold(&#10;        navigationBar: CupertinoNavigationBar(&#10;          middle: Text('Cupertino App Bar'),&#10;        ),&#10;        child: Center(&#10;          child: Container(&#10;            child: Text('Hello World'),&#10;          ),&#10;        ),&#10;      ),&#10;    );&#10;  }&#10;}"
+              description="Create a New Cupertino App" toReformat="true" toShortenFQNames="true">
+        <variable name="className" expression="&quot;MyApp&quot;" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="DART_TOPLEVEL" value="true" />
+            <option name="DART_TOPLEVEL" value="true"/>
         </context>
     </template>
 
     <!--    Material App-->
 
-    <template name="mateApp" value="import 'package:flutter/material.dart';&#10; &#10;void main() =&gt; runApp($className$());&#10; &#10;class $className$ extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return MaterialApp(&#10;      title: 'Material App',&#10;      home: Scaffold(&#10;        appBar: AppBar(&#10;          title: Text('Material App Bar'),&#10;        ),&#10;        body: Center(&#10;          child: Container(&#10;            child: Text('Hello World'),&#10;          ),&#10;        ),&#10;      ),&#10;    );&#10;  }&#10;}" description="Create a New Material App" toReformat="true" toShortenFQNames="true">
-        <variable name="className" expression="&quot;MyApp&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="mateApp"
+              value="import 'package:flutter/material.dart';&#10; &#10;void main() =&gt; runApp($className$());&#10; &#10;class $className$ extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return MaterialApp(&#10;      title: 'Material App',&#10;      home: Scaffold(&#10;        appBar: AppBar(&#10;          title: Text('Material App Bar'),&#10;        ),&#10;        body: Center(&#10;          child: Container(&#10;            child: Text('Hello World'),&#10;          ),&#10;        ),&#10;      ),&#10;    );&#10;  }&#10;}"
+              description="Create a New Material App" toReformat="true" toShortenFQNames="true">
+        <variable name="className" expression="&quot;MyApp&quot;" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="DART_TOPLEVEL" value="true" />
+            <option name="DART_TOPLEVEL" value="true"/>
         </context>
     </template>
 
     <!--    initState-->
 
-    <template name="initS" value="@override&#10;void initState() { &#10;  super.initState();&#10;  // Add code after super&#10;}" description="Add initState Override" toReformat="true" toShortenFQNames="true">
+    <template name="initS" value="@override&#10;void initState() { &#10;  super.initState();&#10;  // Add code after super&#10;}"
+              description="Add initState Override" toReformat="true" toShortenFQNames="true">
         <context>
-            <option name="DART_STATEMENT" value="true" />
+            <option name="DART_STATEMENT" value="true"/>
         </context>
     </template>
 
     <!--    Dispose-->
 
-    <template name="dis" value="@override&#10;void dispose() { &#10;  // Add code before the super&#10;  super.dispose();&#10;}" description="Add dispose Override" toReformat="true" toShortenFQNames="true">
+    <template name="dis" value="@override&#10;void dispose() { &#10;  // Add code before the super&#10;  super.dispose();&#10;}"
+              description="Add dispose Override" toReformat="true" toShortenFQNames="true">
         <context>
-            <option name="DART_STATEMENT" value="true" />
+            <option name="DART_STATEMENT" value="true"/>
         </context>
     </template>
 
     <!--    BehaviorSubject-->
 
-    <template name="subj" value="Stream<$type$> get name => $_nameSubject$.stream; &#10;  final $_nameSubject$ = BehaviorSubject<$type$>();" description="Add BehaviorSubject" toReformat="true" toShortenFQNames="true">
-        <variable name="type" expression="$type$" defaultValue="" alwaysStopAt="true" />
-        <variable name="nameSubject" expression="$nameSubject$" defaultValue="" alwaysStopAt="true" />
+    <template name="subj" value="Stream<$type$> get name => _$nameSubject$.stream; &#10;  final _$nameSubject$ = BehaviorSubject<$type$>();"
+              description="Add BehaviorSubject" toReformat="true" toShortenFQNames="true">
+        <variable name="type" expression="$type$" defaultValue="" alwaysStopAt="true"/>
+        <variable name="nameSubject" expression="$nameSubject$" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="DART_STATEMENT" value="true" />
+            <option name="DART_STATEMENT" value="true"/>
         </context>
     </template>
+
+    <!--    Debug Print-->
+
+    <template name="toStr" value="@override&#10;String toString() {&#10;return $toString$;&#10;}&#10;" description="To String Override"
+              toReformat="true" toShortenFQNames="true">
+        <variable name="toString" expression="$toString$" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="DART_STATEMENT" value="true"/>
+        </context>
+    </template>
+
+
+    <!--    StreamController-->
+
+    <template name="strm"
+              value="Stream<$type$> get name => _$nameController$.stream; &#10;  final _$nameController$ = StreamController<$type$>();"
+              description="StreamController" toReformat="true" toShortenFQNames="true">
+        <variable name="type" expression="$type$" defaultValue="" alwaysStopAt="true"/>
+        <variable name="nameController" expression="$nameController$" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="DART_STATEMENT" value="true"/>
+        </context>
+    </template>
+
+    <!--    Sink-->
+    <template name="snk"
+              value="Stream<$type$> get name => _$nameController$.sink; &#10;  final _$nameController$ = StreamController<$type$>();"
+              description="Sink" toReformat="true" toShortenFQNames="true">
+        <variable name="type" expression="$type$" defaultValue="" alwaysStopAt="true"/>
+        <variable name="nameController" expression="$nameController$" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="DART_STATEMENT" value="true"/>
+        </context>
+    </template>
+
+    <!--    Mounted-->
+    <template name="mounted"
+              value="@override &#10; bool get mounted { &#10;$body$&#10;}&#10;"
+              description="Mounted" toReformat="true" toShortenFQNames="true">
+        <variable name="body" expression="$body$" defaultValue="" alwaysStopAt="true"/>
+
+        <context>
+            <option name="DART_STATEMENT" value="true"/>
+        </context>
+    </template>
+
+    <!--    NoSuchMethod-->
+
+    <template name="nosm"
+              value="@override &#10; dynamic noSuchMethod(Invocation invocation) { &#10;$body$&#10;}&#10;"
+              description="No Such Method" toReformat="true" toShortenFQNames="true">
+        <variable name="body" expression="$body$" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="DART_STATEMENT" value="true"/>
+        </context>
+    </template>
+
+    <!--    Build-->
+
+    <template name="build"
+              value="@override &#10; Widget build(BuildContext context) { &#10; return $body$; &#10;}&#10;"
+              description="No Such Method" toReformat="true" toShortenFQNames="true">
+        <variable name="body" expression="$body$" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="DART_STATEMENT" value="true"/>
+        </context>
+    </template>
+
+    <!--    Reassemble-->
+    <template name="reassemble"
+              value="@override &#10; void reassemble(){ &#10; super.reassemble(); &#10; $body$ &#10;}&#10;"
+              description="Reassemble" toReformat="true" toShortenFQNames="true">
+        <variable name="body" expression="$body$" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="DART_STATEMENT" value="true"/>
+        </context>
+    </template>
+
+    <!--    DidChangeDependencies-->
+    <template name="didChangeD"
+              value="@override &#10; void didChangeDependencies(){ &#10; super.didChangeDependencies(); &#10; $body$ &#10;}&#10;"
+              description="didChangeDependencies" toReformat="true" toShortenFQNames="true">
+        <variable name="body" expression="$body$" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="DART_STATEMENT" value="true"/>
+        </context>
+    </template>
+
+    <!--    didUpdateWidget-->
+
+    <template name="didUpdateW"
+              value="@override &#10; void didUpdateWidget ($Type$ oldWidget) { &#10; super.didChangeDependencies(); &#10; $body$ &#10;}&#10;"
+              description="didUpdateWidget" toReformat="true" toShortenFQNames="true">
+        <variable name="body" expression="$body$" defaultValue="" alwaysStopAt="true"/>
+        <variable name="type" expression="$Type$" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="DART_STATEMENT" value="true"/>
+        </context>
+    </template>
+
+    <!--    TweenAnimationBuilder-->
+    <template name="tweenAnimationBldr"
+              value="TweenAnimationBuilder( &#10; duration: $duration$, &#10; tween: $tween$, &#10; builder: (BuildContext context, $type$ value, Widget child) { &#10; return  $body$  &#10; }&#10;"
+              description="Tween Animation Builder" toReformat="true" toShortenFQNames="true">
+        <variable name="duration" expression="$duration$" defaultValue="const Duration()" alwaysStopAt="true"/>
+        <variable name="tween" expression="$tween$" defaultValue="Tween()" alwaysStopAt="true"/>
+        <variable name="type" expression="$type$" defaultValue="dynamic" alwaysStopAt="true"/>
+        <variable name="body" expression="$body$" defaultValue="Container();" alwaysStopAt="true"/>
+        <context>
+            <option name="DART_STATEMENT" value="true"/>
+        </context>
+    </template>
+
+    <!--    valueListenableBuilder-->
+    <template name="valueListenableBuilder"
+              value="ValueListenableBuilder( &#10; valueListenable: $duration$, &#10; builder: (BuildContext context, $type$ value, Widget child) { &#10; return  $body$  &#10; }&#10;"
+              description="Value Listenable Builder" toReformat="true" toShortenFQNames="true">
+        <variable name="valueListenable" expression="$valueListenable$" defaultValue="null" alwaysStopAt="true"/>
+        <variable name="type" expression="$type$" defaultValue="dynamic" alwaysStopAt="true"/>
+        <variable name="body" expression="$body$" defaultValue="Container();" alwaysStopAt="true"/>
+        <context>
+            <option name="DART_STATEMENT" value="true"/>
+        </context>
+    </template>
+
+
 </templateSet>
