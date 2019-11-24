@@ -267,7 +267,7 @@
 
     <!--    BehaviorSubject-->
 
-    <template name="subj" value="Stream<$type$> get name => _$nameSubject$.stream; &#10;  final _$nameSubject$ = BehaviorSubject<$type$>();"
+    <template name="subj" value="Stream&lt;$type$&gt; get name => _$nameSubject$.stream; &#10;  final _$nameSubject$ = BehaviorSubject&lt;$type$&gt;();"
               description="Add BehaviorSubject" toReformat="true" toShortenFQNames="true">
         <variable name="type" expression="$type$" defaultValue="" alwaysStopAt="true"/>
         <variable name="nameSubject" expression="$nameSubject$" defaultValue="" alwaysStopAt="true"/>
@@ -290,7 +290,7 @@
     <!--    StreamController-->
 
     <template name="strm"
-              value="Stream<$type$> get name => _$nameController$.stream; &#10;  final _$nameController$ = StreamController<$type$>();"
+              value="Stream&lt;$type$&gt; get name => _$nameController$.stream; &#10;  final _$nameController$ = StreamController&lt;$type$&gt;();"
               description="StreamController" toReformat="true" toShortenFQNames="true">
         <variable name="type" expression="$type$" defaultValue="" alwaysStopAt="true"/>
         <variable name="nameController" expression="$nameController$" defaultValue="" alwaysStopAt="true"/>
@@ -301,7 +301,7 @@
 
     <!--    Sink-->
     <template name="snk"
-              value="Stream<$type$> get name => _$nameController$.sink; &#10;  final _$nameController$ = StreamController<$type$>();"
+              value="Stream&lt;$type$&gt; get name => _$nameController$.sink; &#10;  final _$nameController$ = StreamController&lt;$type$&gt;();"
               description="Sink" toReformat="true" toShortenFQNames="true">
         <variable name="type" expression="$type$" defaultValue="" alwaysStopAt="true"/>
         <variable name="nameController" expression="$nameController$" defaultValue="" alwaysStopAt="true"/>

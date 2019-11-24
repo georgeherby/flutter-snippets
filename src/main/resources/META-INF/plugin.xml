@@ -2,12 +2,10 @@
 <idea-plugin>
     <id>com.herbert.george.flutter-snippets</id>
     <name>Flutter Snippets</name>
-    <version>1.0.0-beta-2</version>
     <vendor>George Herbert</vendor>
     <description><![CDATA[
 For full details of the available snippet, please <a href="https://github.com/georgeherby/flutter-snippets/blob/master/README.md">visit here</a>
 ]]></description>
-    <change-notes>[Breaking Changes] - A overhaul to bring us in line with the VS plugin and make shortcuts consistent </change-notes>
     <idea-version since-build="141.0" />
     <depends>com.intellij.modules.java</depends>
     <extensions defaultExtensionNs="com.intellij">
