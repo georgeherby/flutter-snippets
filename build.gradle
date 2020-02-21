@@ -34,7 +34,7 @@ intellij {
     sameSinceUntilBuild true
     patchPluginXml {
         version project.version
-        changeNotes "[Breaking Changes] - A overhaul to bring us in line with the VS plugin and make shortcuts consistent"
+        changeNotes "[Breaking Changes] - Read the README for changes https://github.com/georgeherby/flutter-snippets/blob/master/README.md. A overhaul to bring us in line with the VS plugin and make shortcuts consistent"
         sinceBuild pluginSinceBuild
     }
 }
