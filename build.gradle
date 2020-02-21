@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.4.13'
+}
+apply plugin: 'org.jetbrains.intellij'
+apply plugin: 'java'
+apply plugin: 'idea'
+
+group 'com.herbert.george.flutter-snippets'
+version "$version-$releaseChannel-$iteration"
+sourceCompatibility = javaVersion
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+sourceSets {
+    main {
+        java.srcDirs 'src', 'gen'
+        resources.srcDir 'resources'
+    }
+}
+
+intellij {
+    plugins 'java', "Dart:$dartVersion"
+    version ideaVersion
+    type ideaType
+    pluginName pluginName
+    downloadSources Boolean.valueOf(sources)
+    updateSinceUntilBuild false
+    sameSinceUntilBuild true
+    patchPluginXml {
+        version project.version
+        changeNotes "[Breaking Changes] - Read the README for changes https://github.com/georgeherby/flutter-snippets/blob/master/README.md. A overhaul to bring us in line with the VS plugin and make shortcuts consistent"
+        sinceBuild pluginSinceBuild
+    }
+}
+
+publishPlugin {
+    channels releaseChannel
+    token intellijToken
+}

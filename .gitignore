@@ -3,3 +3,6 @@
 /.idea/
 /out/
 /*.dart
+gradle.properties
+.gradle/
+gradle/
