@@ -6,10 +6,9 @@
     <description><![CDATA[
 For full details of the available snippet, please <a href="https://github.com/georgeherby/flutter-snippets/blob/master/README.md">visit here</a>
 ]]></description>
-    <idea-version since-build="141.0" />
     <depends>com.intellij.modules.java</depends>
     <extensions defaultExtensionNs="com.intellij">
-        <defaultLiveTemplatesProvider implementation="FlutterTemplateProvider" />
-        <liveTemplateContext implementation="FlutterContext" />
+        <defaultLiveTemplates file="/liveTemplates/Flutter.xml"/>
+        <liveTemplateContext implementation="FlutterContext"/>
     </extensions>
 </idea-plugin>
