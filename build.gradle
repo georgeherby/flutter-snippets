@@ -34,7 +34,7 @@ intellij {
     sameSinceUntilBuild true
     patchPluginXml {
         version project.version
-        changeNotes "Update to remove deprecated plugin in preperation for 2020.1"
+        changeNotes "Update FutureBuilder and StreamBuilder so that they are more usable and more in keeping with the documentation"
         sinceBuild pluginSinceBuild
     }
 }
