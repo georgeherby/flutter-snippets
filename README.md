@@ -10,7 +10,6 @@ An Intellij & Android Studio plugin that adds Live Templates to your IDE saving 
 ### Generic
 | Shortcut|Expanded|Description|Flutter Docs| 
 | ---------- | ----------| -------------- | -------------- |
-|`alertDialog`|Alert Dialog |Creates a showDialog that returns with AlertDialog|[View Docs](https://docs.flutter.io/flutter/widgets/AlertDialog-class.html)|
 |`animatedBldr`|Animated Builder|Creates an Animated Builder. The child widget  is passed to the builder|[View Docs](https://docs.flutter.io/flutter/widgets/AnimationBuilder-class.html)|
 |`aspectRatio`| AspectRatio |Creates an AspectRatio|[View Docs](https://api.flutter.dev/flutter/widgets/AspectRatio-class.html)|
 |`build`|Build Method|Describes the part of the user interface represented by the widget.| |
@@ -30,6 +29,7 @@ An Intellij & Android Studio plugin that adds Live Templates to your IDE saving 
 |`orientationBldr`|Orientation Builder|Creates a builder which allows for the orientation of the device to be specified and referenced|[View Docs](https://api.flutter.dev/flutter/widgets/OrientationBuilder-class.html)|
 |`reassemble`|Reassemble|Called whenever the application is reassembled during debugging, for example during hot reload.|[View Docs](https://api.flutter.dev/flutter/widgets/State/reassemble.html)|
 |`row`| |Creates a Row Widget|[View Docs](https://docs.flutter.io/flutter/widgets/Row-class.html)|
+|`showDialog`|Alert Dialog |Creates a showDialog that returns with AlertDialog|[View Docs](https://docs.flutter.io/flutter/widgets/AlertDialog-class.html)|
 |`singleChildSV`|Single Child Scroll View|Creates a scroll view with a single child|[View Docs](https://api.flutter.dev/flutter/widgets/SingleChildScrollView-class.html)|
 |`snk`|Sink|A Sink is the input of a stream.|[View Docs](https://api.dartlang.org/stable/dart-async/StreamController-class.html)|
 |`streamBldr`| Stream Builder |Creates a new StreamBuilder that builds itself based on the latest snapshot of interaction with the specified stream |[View Docs](https://docs.flutter.io/flutter/widgets/StreamBuilder-class.html)|
