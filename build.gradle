@@ -1,10 +1,11 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.intellij' version '0.4.18'
+    id 'org.jetbrains.intellij' version '0.6.5'
 }
 apply plugin: 'org.jetbrains.intellij'
 apply plugin: 'java'
 apply plugin: 'idea'
+apply from: "$rootDir/verifier.gradle"
 
 group 'com.herbert.george.flutter-snippets'
 version "$version-$releaseChannel-$iteration"
@@ -34,7 +35,7 @@ intellij {
     sameSinceUntilBuild true
     patchPluginXml {
         version project.version
-        changeNotes "Update FutureBuilder and StreamBuilder so that they are more usable and more in keeping with the documentation"
+        changeNotes "Remove deprecation that started in 2020.2 (stop supporting before 2020.2)"
         sinceBuild pluginSinceBuild
     }
 }
@@ -43,3 +44,13 @@ publishPlugin {
     channels releaseChannel
     token intellijToken
 }
+
+pluginVerifier {
+    pluginFileName = "$rootProject.name-$version"
+    ides = [
+                    "IC-202.6397.94",
+                    "IC-203.5981.155"]
+    verifierVersion = "1.253"
+}
+
+check.dependsOn pluginVerifier
