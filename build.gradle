@@ -35,7 +35,7 @@ intellij {
     sameSinceUntilBuild true
     patchPluginXml {
         version project.version
-        changeNotes "Remove deprecation that started in 2020.2 (stop supporting before 2020.2)"
+        changeNotes "Update to showDialg to support for Flutter 2.0 Thanks ming-chu"
         sinceBuild pluginSinceBuild
     }
 }
