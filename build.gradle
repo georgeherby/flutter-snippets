@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.intellij' version '0.6.5'
+    id 'org.jetbrains.intellij' version '1.5.3'
 }
 apply plugin: 'org.jetbrains.intellij'
 apply plugin: 'java'
@@ -10,6 +10,7 @@ apply from: "$rootDir/verifier.gradle"
 group 'com.herbert.george.flutter-snippets'
 version "$version-$releaseChannel-$iteration"
 sourceCompatibility = javaVersion
+targetCompatibility = javaVersion
 repositories {
     mavenCentral()
 }
@@ -45,12 +46,12 @@ publishPlugin {
     token intellijToken
 }
 
-pluginVerifier {
-    pluginFileName = "$rootProject.name-$version"
-    ides = [
+runPluginVerifier {
+//    pluginFileName = "$rootProject.name-$version"
+    ideVersions = [
                     "IC-202.6397.94",
                     "IC-203.5981.155"]
-    verifierVersion = "1.253"
+    verifierVersion = "latest"
 }
 
-check.dependsOn pluginVerifier
+check.dependsOn runPluginVerifier
