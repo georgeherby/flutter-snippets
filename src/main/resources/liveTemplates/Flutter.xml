@@ -97,7 +97,7 @@
     <!--    showDialog-->
 
     <template name="showDialog"
-              value="showDialog&lt;void&gt;(&#10;context: $context$,&#10;barrierDismissible: $dismiss$, // false = user must tap button, true = tap outside dialog&#10;builder: (BuildContext dialogContext){&#10;return AlertDialog(&#10;title: Text('$title$'),&#10;content: Text('$content$'),&#10;actions: &lt;Widget&gt;[&#10;FlatButton(&#10;child: Text('$buttonText$'),&#10;onPressed: () {&#10;Navigator.of(dialogContext).pop(); // Dismiss alert dialog&#10;},&#10;),&#10;],&#10;);&#10;},&#10;);"
+              value="showDialog&lt;void&gt;(&#10;context: $context$,&#10;barrierDismissible: $dismiss$, // false = user must tap button, true = tap outside dialog&#10;builder: (BuildContext dialogContext){&#10;return AlertDialog(&#10;title: Text('$title$'),&#10;content: Text('$content$'),&#10;actions: &lt;Widget&gt;[&#10;TextButton(&#10;child: Text('$buttonText$'),&#10;onPressed: () {&#10;Navigator.of(dialogContext).pop(); // Dismiss alert dialog&#10;},&#10;),&#10;],&#10;);&#10;},&#10;);"
               description="New AlertDialog" toReformat="true" toShortenFQNames="true">
         <variable name="context" expression="&quot;context&quot;" defaultValue="" alwaysStopAt="true"/>
         <variable name="dismiss" expression="&quot;barrierDismissible&quot;" defaultValue="" alwaysStopAt="true"/>
