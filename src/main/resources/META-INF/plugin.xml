@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<idea-plugin>
+<idea-plugin url="https://plugins.jetbrains.com/plugin/12348-flutter-snippets">
     <id>com.herbert.george.flutter-snippets</id>
     <name>Flutter Snippets</name>
     <vendor>George Herbert</vendor>
     <description><![CDATA[
-For full details of the available snippet, please <a href="https://github.com/georgeherby/flutter-snippets/blob/master/README.md">visit here</a>
+For full details of the available snippets, please <a href="https://github.com/georgeherby/flutter-snippets/blob/master/README.md">visit here</a>
 ]]></description>
     <depends>com.intellij.modules.java</depends>
     <extensions defaultExtensionNs="com.intellij">
